@@ -53,12 +53,14 @@ export class ElasticDirective {
     this.adjust();
   }
 
+/*
   ngAfterContentChecked(): void {
     this.adjust();
   }
+*/
 
   adjust(): void {
-    // this.textareaEl.style.height = 'auto';
+    this.textareaEl.style.height = 'auto';
     this.textareaEl.style.height = this.textareaEl.scrollHeight + "px";
   }
 }
